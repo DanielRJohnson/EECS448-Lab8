@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
         else{
             alert("Invalid Color. Good input is (0-F,0-F) (0-F,0-F) (0-F,0-F)");
         }
+        let width = document.getElementById("borderWidth").value;
+        if (width !== ""){
+            document.getElementById("catText").style.borderWidth = width + "px " + width + "px";
+        }
     });
     document.getElementById("chBackground").addEventListener("click", () => {
         let r = document.getElementById("bgcolR").value;
